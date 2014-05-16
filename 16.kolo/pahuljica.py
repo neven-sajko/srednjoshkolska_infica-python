@@ -6,6 +6,8 @@ broj_krakova = int(input())
 velki_krak = int(input())
 mali_krak = velki_krak - int(input())
 degrees(broj_krakova)
+# Sets the perigon to broj_krakova degrees, in other words:
+# broj_krakova/2 is the straight angle.
 
 
 def izdanak_pahuljice():
