@@ -4,6 +4,12 @@
 
 debug = True
 
+
+def pazi_rupe(polje):
+    '''Provjerava kolika je rupa prije danog polja koristeći
+    skup polja-rupa 'rupe', te postavlja 'koraci' na broj dovoljan za
+    preskakanje te rupe.
+    '''
 rupe = {int(input()) for rupa in range(int(input()))}
 if debug:
     print(rupe)
