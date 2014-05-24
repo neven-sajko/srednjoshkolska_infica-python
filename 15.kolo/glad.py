@@ -1,10 +1,11 @@
 #! /usr/bin/python3
 # Neven Sajko
 
-debug = False
+debug = True
 
 sat = int(input())
 mali = int(input())
+# 'mali' = trajanje malog odmora = vrijeme kupovanja sandwicha
 veliki = int(input())
 vrijeme = 60*int(input()) + int(input())
 
@@ -24,7 +25,7 @@ def main(time, schedule):
             return schedule[event] + sat
         if schedule[event] + sat < time <= schedule[event+1] - mali:
             return time
-        elif schedule[event] + sat >= time and schedule[event] + sat + mali <= schedule[event+1]:
+        elif time <= schedule[event] + sat:
             return schedule[event] + sat
 
 vrijeme_za_sandwich = main(vrijeme, raspored_sati)
