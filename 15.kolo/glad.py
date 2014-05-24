@@ -34,9 +34,9 @@ def main(time, schedule):
                 print('Sat je.')
             return schedule[event] + sat
 
-vrijeme_za_sandwich = main(vrijeme, raspored_sati)
+vrijeme_do_polaska = main(vrijeme, raspored_sati) - vrijeme
 
-if vrijeme_za_sandwich == vrijeme:
+if vrijeme_do_polaska == 0:
     print('Kreni odmah')
 else:
-    print('Kreni za', vrijeme_za_sandwich-vrijeme)
+    print('Kreni za', vrijeme_do_polaska)
